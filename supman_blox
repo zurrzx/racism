@@ -1,0 +1,7 @@
+if game.PlaceId == 334907712 then
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/misc-scripts/main/BloxChannelGUI'),true))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/zurrzx/racism/main/supman_inventory'),true))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/misc-scripts/main/HealGod'),true))()
+else
+    warn(" ")
+end
