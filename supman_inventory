@@ -7,7 +7,7 @@ local variables = {
    ["RenderStepped"] = services["RunService"].RenderStepped,
 }
 
-_G.Position = {"AK","Handcuffs","Sword","AWP","G36","Medkit"} -- you can keep adding more, just make sure to have a comma at the end
+_G.Position = {"AK","Handcuffs","RedBalloon","AWP","Sword","Medkit"} -- you can keep adding more, just make sure to have a comma at the end
 
 local function get_instance(from,name)
    if from ~= nil and name ~= nil then
