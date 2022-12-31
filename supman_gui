@@ -1,0 +1,170 @@
+local BC = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Ultimate = Instance.new("TextButton")
+local Semi = Instance.new("TextButton")
+local Arrest = Instance.new("TextButton")
+local Lag = Instance.new("TextButton")
+local HideName = Instance.new("TextButton")
+local G36 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Reach = Instance.new("TextButton")
+
+--Properties:
+
+BC.Name = "BC"
+BC.Parent = game.CoreGui
+BC.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = BC
+Main.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.75230062, 0, 0.57914114, 0)
+Main.Size = UDim2.new(0, 229, 0, 243)
+
+Ultimate.Name = "Ultimate"
+Ultimate.Parent = Main
+Ultimate.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Ultimate.BorderSizePixel = 0
+Ultimate.Position = UDim2.new(0.109170303, 0, 0.156378597, 0)
+Ultimate.Size = UDim2.new(0, 77, 0, 26)
+Ultimate.Font = Enum.Font.SourceSans
+Ultimate.Text = "Ultimate Weapon"
+Ultimate.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ultimate.TextScaled = true
+Ultimate.TextSize = 14.000
+Ultimate.TextWrapped = true
+Ultimate.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/misc-scripts/main/UltimateWeapon'),true))()
+end)
+
+Semi.Name = "Semi"
+Semi.Parent = Main
+Semi.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Semi.BorderSizePixel = 0
+Semi.Position = UDim2.new(0.554585159, 0, 0.156378597, 0)
+Semi.Size = UDim2.new(0, 77, 0, 26)
+Semi.Font = Enum.Font.SourceSans
+Semi.Text = "Semi Legit"
+Semi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Semi.TextSize = 14.000
+Semi.MouseButton1Down:Connect(function()
+	for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+   if v:FindFirstChild("GunConfig") then
+       local c =  require(v.GunConfig)
+       c.MaxAmmo = 21
+       c.HitDamage = 40
+       c.TeamKill = true
+       
+            end
+        end
+end)
+
+
+Arrest.Name = "Arrest"
+Arrest.Parent = Main
+Arrest.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Arrest.BorderSizePixel = 0
+Arrest.Position = UDim2.new(0.109170303, 0, 0.366255134, 0)
+Arrest.Size = UDim2.new(0, 77, 0, 26)
+Arrest.Font = Enum.Font.SourceSans
+Arrest.Text = "Delete AFK"
+Arrest.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arrest.TextSize = 14.000
+Arrest.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Head.OverheadGui.Labels.AFK:Destroy()
+end)
+
+Lag.Name = "Lag"
+Lag.Parent = Main
+Lag.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Lag.BorderSizePixel = 0
+Lag.Position = UDim2.new(0.554585159, 0, 0.366255134, 0)
+Lag.Size = UDim2.new(0, 77, 0, 26)
+Lag.Font = Enum.Font.SourceSans
+Lag.Text = "Hide Tool"
+Lag.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lag.TextSize = 14.000
+Lag.MouseButton1Down:Connect(function()
+	local lp = game.Players.LocalPlayer
+local char = lp.Character
+
+char:FindFirstChildOfClass("Tool").RequiresHandle = false
+char:FindFirstChildOfClass("Tool").Handle:Destroy()
+end)
+
+HideName.Name = "HideName"
+HideName.Parent = Main
+HideName.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+HideName.BorderSizePixel = 0
+HideName.Position = UDim2.new(0.109170303, 0, 0.559670806, 0)
+HideName.Size = UDim2.new(0, 77, 0, 26)
+HideName.Font = Enum.Font.SourceSans
+HideName.Text = "Hide Name"
+HideName.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideName.TextSize = 14.000
+HideName.MouseButton1Down:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.Head.OverheadGui:Destroy()
+end)
+
+G36.Name = "G36"
+G36.Parent = Main
+G36.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+G36.BorderSizePixel = 0
+G36.Position = UDim2.new(0.554585159, 0, 0.559670806, 0)
+G36.Size = UDim2.new(0, 77, 0, 26)
+G36.Font = Enum.Font.SourceSans
+G36.Text = "ESP"
+G36.TextColor3 = Color3.fromRGB(255, 255, 255)
+G36.TextSize = 14.000
+G36.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zurrzx/racism/main/unnamedesp'),true))()
+end)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0611353703, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 25)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "BLOX CHANNEL"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 23.000
+
+Reach.Name = "Reach"
+Reach.Parent = Main
+Reach.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Reach.BorderSizePixel = 0
+Reach.Position = UDim2.new(0.108999997, 0, 0.754000008, 0)
+Reach.Size = UDim2.new(0, 77, 0, 26)
+Reach.Font = Enum.Font.SourceSans
+Reach.Text = "Reach"
+Reach.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reach.TextSize = 14.000
+Reach.TextWrapped = true
+Reach.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/misc-scripts/main/Reach'),true))()
+end)
+
+-- Scripts:
+
+local function INUFZC_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	print("Press 1 on your keypad to toggle the gui!")
+end
+coroutine.wrap(INUFZC_fake_script)()
+local function WYAIB_fake_script() -- BC.LocalScript 
+	local script = Instance.new('LocalScript', BC)
+
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.KeypadOne  then 
+			script.Parent.Main.Visible = not script.Parent.Main.Visible
+			end
+		end
+	end
+	game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(WYAIB_fake_script)()
