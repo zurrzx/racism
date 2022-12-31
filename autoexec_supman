@@ -1,4 +1,4 @@
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/misc-scripts/main/BloxChannelGUI'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zurrzx/racism/main/supman_gui'),true))()
 wait(0.1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/misc-scripts/main/HealGod'),true))()
 wait(0.1)
